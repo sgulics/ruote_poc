@@ -21,6 +21,16 @@ Application depends on mysql. sqlite will not work
 Run the specs:
 `rake spec`
 
+Start Workers:
+`rake ruote:run_worker`
+
+In another terminal start up the rails console and create a
+RequestItem. You should see the some activity in the worker terminal as
+it starts the workflow. After a few seconds, reload the RequestItem that
+was created and check the state. If everything went ok it should be
+"completed"
+
+
 Workflow
 --------
 
